@@ -20,6 +20,11 @@ pool:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
+- task: NodeTool@0  # Adicione a chave 'task' para o novo bloco de tarefa
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Another task'  # Defina um nome adequado para a nova tarefa
+
 - script: |
     npm install
     npm run build
