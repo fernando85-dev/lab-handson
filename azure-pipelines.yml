@@ -1,13 +1,14 @@
 # Node.js
+steps:
 - task: KubernetesManifest@1
   inputs:
     action: 'deploy'
     connectionType: 'kubernetesServiceConnection'
     kubernetesServiceConnection: 'hands-on-aks-sp-devops01-handson-1687534607107'
+
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
 trigger:
 - main
 
