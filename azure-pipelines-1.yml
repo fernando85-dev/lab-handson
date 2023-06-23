@@ -1,4 +1,10 @@
 # Docker
+- task: KubernetesManifest@1
+  inputs:
+    action: 'deploy'
+    connectionType: 'kubernetesServiceConnection'
+    kubernetesServiceConnection: 'hands-on-aks-sp-devops01-handson-dev-1687532556129'
+    namespace: 'handson-dev'
 # Build a Docker image
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
