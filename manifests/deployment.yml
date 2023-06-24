@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: fernandodevlabhandson 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fernandodevlabhandson
+  template:
+    metadata:
+      labels:
+        app: fernandodevlabhandson 
+    spec:
+      containers:
+        - name: fernandodevlabhandson 
+          image: aksdevopssp.azurecr.io/fernandodevlabhandson
+          ports:
+          - containerPort: 3000
